@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my social media platform</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-background">
+        <nav class="navigation">
+          <div class="logo">
+            <span class="logo-text">Goeveni</span>
+          </div>
+
+          <ul class="menu">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">Discussion</a></li>
+            <li class="menu-item"><a href="#">Wheather</a></li>
+            <li class="menu-item"><a href="#">Pages</a></li>
+            <li class="menu-item"><a href="#">Blog</a></li>
+            <li class="menu-item"><button>Add New Event</button></li>
+          </ul>
+          <!-- icons -->
+
+          <!-- profile -->
+          <div class="avater">
+            <div class="icons">
+              <ion-icon name="search-outline"></ion-icon>
+              <ion-icon name="people-outline"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+
+            <div class="avater-content">
+              <img src="./images/profile.jpg" alt="image avater" />
+              <span>hi, John</span>
+            </div>
+          </div>
+          <!-- LOGO,MENU ITEMS,PROFILE  -->
+        </nav>
+      </div>
+
+      <!-- RELATIVE -->
+      <section class="hero-section">
+        <div class="hero-img"></div>
+
+        <article class="container">
+          <div class="user-profile">
+            <!-- ABSOLUTE -->
+            <img src="./images/profile.jpg" alt="" />
+            <div style="margin-top: 30px">
+              <h2>Muse jaamac</h2>
+              <p>Professional Web Developer.</p>
+            </div>
+          </div>
+
+          <div class="stats">
+            <button>view events</button>
+            <h3>events <span>22</span></h3>
+            <h3>Discussions <span>42</span></h3>
+          </div>
+        </article>
+      </section>
+    </header>
+
+    <section class="sub-menu">
+      <ul>
+        <li><a href="#">Activity</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Fllowers</a></li>
+        <li><a href="#">Flowing</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Booked Events</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </section>
+
+    <main class="main-container">
+      <!-- 
+        two sidebars 
+        main
+       -->
+
+      <aside class="sidebar-one">
+        <section>
+          <h2>Social Accounts</h2>
+          <span>
+            <ion-icon name="globe-outline"></ion-icon>
+            <a href="#">www.example.com</a>
+          </span>
+          <span>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="#">www.facebook.com</a>
+          </span>
+          <span>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <a href="#">www.twiter.com</a>
+          </span>
+          <span>
+            <ion-icon name="logo-google"></ion-icon>
+            <a href="#">www.google.com</a>
+          </span>
+          <span>
+            <ion-icon name="logo-pinterest"></ion-icon>
+            <a href="#">www.pinterest.com</a>
+          </span>
+          <span>
+            <ion-icon name="logo-youtube"></ion-icon>
+            <a href="#">www.youtube.com</a>
+          </span>
+        </section>
+
+        <section class="profiles">
+          <h2>People Viewed Profile</h2>
+
+          <div class="profile">
+            <img src="/images/profile.jpg" alt="" />
+            <h4>Muuse Jaamac lorem10</h4>
+            <ion-icon class="icon" name="person-add-outline"></ion-icon>
+          </div>
+          <div class="profile">
+            <img src="/images/profile.jpg" alt="" />
+            <h4>Radia Iscamil</h4>
+            <ion-icon
+              style="background-color: orange; color: white"
+              class="icon"
+              name="person-add-outline"
+            ></ion-icon>
+          </div>
+          <div class="profile">
+            <img src="/images/profile.jpg" alt="" />
+            <h4>Ahmed Abdifatah</h4>
+            <ion-icon class="icon" name="person-add-outline"></ion-icon>
+          </div>
+          <div class="profile">
+            <img src="/images/profile.jpg" alt="" />
+            <h4>Cabdiqni Cabdifatah</h4>
+            <ion-icon class="icon" name="person-add-outline"></ion-icon>
+          </div>
+          <div class="profile">
+            <img src="/images/profile.jpg" alt="" />
+            <h4>Maxamed Jaamac</h4>
+            <ion-icon class="icon" name="person-add-outline"></ion-icon>
+          </div>
+        </section>
+      </aside>
+
+      <article class="container-body">
+        <div class="new-activity">
+          <div>
+            <img src="./images/profile.jpg" alt="" />
+            <input type="text" placeholder="what is new, ahmed " />
+          </div>
+
+          <div class="btn">
+            <button>Upload Activity</button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-header">
+            <div class="post-profile">
+              <img src="./images/profile.jpg" alt="" />
+              <div>
+                <h3>John Doe</h3>
+                <p>posted an updated a 5 min ago</p>
+              </div>
+            </div>
+            <span style="cursor: pointer">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </span>
+          </div>
+
+          <div class="post-content">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+              voluptate dignissimos, doloremque nemo ipsa neque aliquam et velit
+              consequatur excepturi.
+            </p>
+          </div>
+
+          <div class="post-footer">
+            <div class="left-footer">
+              <span> <ion-icon name="heart"></ion-icon> like 251 </span>
+              <span><ion-icon name="chatbox"></ion-icon> Comment 401 </span>
+            </div>
+            <div>
+              <span><ion-icon name="eye"></ion-icon> Views 251 </span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <aside class="sidebar-two">
+        <div class="sidebar-two-post">
+          <h3>want to post your event</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
+            temporibus?
+          </p>
+          <button>Post it Now</button>
+        </div>
+
+        <div class="weather"></div>
+
+        <div class="news">
+          <h2>News</h2>
+          <div style="border-top: 1px solid gray">
+            <h4>
+              <ion-icon
+                style="color: orangered"
+                name="musical-notes-outline"
+              ></ion-icon>
+              Music
+            </h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing
+              <a href="/"> elit. Modi, ratione.</a>
+            </p>
+          </div>
+          <div>
+            <h4>
+              <ion-icon
+                style="color: orangered"
+                name="football-outline"
+              ></ion-icon>
+              Sports
+            </h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing
+              <a href="/"> elit. Modi, ratione.</a>
+            </p>
+          </div>
+          <div>
+            <h4>
+              <ion-icon
+                style="color: orangered"
+                name="accessibility-outline"
+              ></ion-icon>
+              Art
+            </h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing
+              <a href="/"> elit. Modi, ratione.</a>
+            </p>
+          </div>
+
+          <h3 style="text-align: center">More</h3>
+        </div>
+      </aside>
+    </main>
+
+    <section class="dots">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <section>
+        <div>
+          <h1>© 2018 Goeveni By <span>Gambol</span>. All Rights Reserved</h1>
+        </div>
+
+        <ul>
+          <li>Privacy</li>
+          <li>Terms and Conditions</li>
+          <li>About</li>
+          <li>Contact us</li>
+        </ul>
+      </section>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
