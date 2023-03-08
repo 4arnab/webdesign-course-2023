@@ -158,13 +158,14 @@
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 4rem;
-  padding: 1em;
+  padding: 2.5em;
   border-bottom: 1px solid var(--light-gray-color-two);
 }
 
 .sub-menu ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
@@ -490,4 +491,116 @@ footer ul {
 footer ul li {
   cursor: pointer;
   color: gray;
+}
+.humbuger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.humbuger-menu div {
+  width: 20px;
+  height: 2px;
+  margin-bottom: 3px;
+  background-color: wheat;
+}
+
+@media (max-width: 900px) {
+  .humbuger-menu {
+    display: block;
+  }
+  .navigation .menu {
+    display: none;
+  }
+}
+
+/* psudo classes */
+/* psudo elements */
+@media (max-width: 768px) {
+  .avater .icons {
+    display: none;
+  }
+
+  .sub-menu {
+    background-color: white;
+    position: relative;
+  }
+
+  .sub-menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
+  .container {
+    /* background-color: orange; */
+    flex-direction: column;
+    column-gap: 2rem;
+  }
+
+  .user-profile {
+    position: static;
+  }
+  .stats {
+    position: static;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .main-container .container-body {
+    order: 1;
+  }
+
+  .sidebar-one {
+    order: 2;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .sidebar-one section {
+    width: 50%;
+  }
+
+  .sidebar-one .profiles {
+    margin-top: 0;
+  }
+  .sidebar-two {
+    order: 3;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .sidebar-two .news {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar-one {
+    flex-direction: column;
+  }
+
+  .sidebar-one section {
+    width: 100%;
+  }
+  .sidebar-two {
+    flex-direction: column;
+  }
+
+  footer section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
 }
