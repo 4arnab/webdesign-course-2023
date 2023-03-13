@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 4rem;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #24faa8, #f55e78);
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+  position: relative;
+}
+
+section div > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+section div button {
+  border: none;
+  padding: 10px 6px;
+  background-color: black;
+  color: white;
+  /* animation-name: buttonAnimation;
+  animation-duration: 0.5s; */
+  transition: all 0.4s;
+  animation: buttonAnimation 0.5s linear backwards;
+  /* animation-delay: 2s; */
+  /* animation: name duration timing-function delay iteration-count direction
+    fill-mode; */
+
+  /* animation-name: ;
+  animation-duration: ;
+  animation-timing-function: ;
+  animation-delay: ;
+  animation-iteration-count: ;
+  animation-direction: ;
+  animation-fill-mode: ; */
+}
+
+button:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes buttonAnimation {
+  /* from {
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+  }
+  to {
+    /* opacity: 1; */
+  /* transform: scale(1); */
+
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+    background-color: orange;
+  }
+
+  40% {
+    /* transform: scale(1.4); */
+    /* background-color: #24faa8; */
+  }
+
+  80% {
+  }
+  100% {
+  }
+}
+
+section div h1 {
+  animation: title 0.6s linear;
+}
+
+section div p {
+  animation: paragraph 0.6s linear;
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}
+
+@keyframes paragraph {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
+/* 
+
+transform 
+    x
+    y
+    rotation ()
+    skew
+    scale 
+    opacity
+*/
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  right: 30%;
+  top: 30%;
+
+  animation: circle 2s linear 0s infinite both alternate;
+}
+.square {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  transform: rotate(30deg);
+
+  animation: square 2s linear 0s infinite both alternate;
+}
+
+@keyframes circle {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes square {
+  from {
+    opacity: 0;
+    transform: rotate(180deg) scale(0);
+  }
+}
